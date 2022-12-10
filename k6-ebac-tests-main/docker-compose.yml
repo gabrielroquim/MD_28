@@ -45,4 +45,4 @@ services:
     depends_on:
       - influxdb
       - grafana
-    command: "run /home/ebac/user.test.js"
+    command: "run /home/ebac/customers.test.js"
