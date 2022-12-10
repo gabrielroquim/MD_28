@@ -1,7 +1,8 @@
 import { group } from 'k6';
-import Login from '../request/login.request';
+import Login from '../request/login.request.js';
 import data from '../data/usuarios.json'
-import User from '../request/user.request';
+import User from '../request/user.request.js';
+import Customer from '../request/customers.request.js';
 
 export const options = {
   stages: [
@@ -19,6 +20,7 @@ export default function () {
 
   let login = new Login()
   let user = new User()
+  let customers = new Customer()
 
   group('login and get token', () => {
     login.access(data.usuarioOk.user, data.usuarioOk.pass)
@@ -26,6 +28,10 @@ export default function () {
 
   group('list users', () => {
     user.list(login.getToken())
+  })
+
+  group('list customers', () =>{
+    customers.list(login.getToken())
   })
 
 }
