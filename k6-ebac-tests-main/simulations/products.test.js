@@ -1,7 +1,7 @@
 import { group } from 'k6'
-import Login from '../requests/login.request.js'
+import Login from '../request/login.request.js'
 import data from '../data/usuarios.json'
-import Product from '../requests/products.request.js'
+import Product from '../request/products.request.js'
 
 export const options = {
     stages: [
