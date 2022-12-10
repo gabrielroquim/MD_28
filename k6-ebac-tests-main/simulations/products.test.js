@@ -5,10 +5,10 @@ import Product from '../request/products.request.js'
 
 export const options = {
     stages: [
-        {duration: '10s', target: 10},
-        {duration: '5s', target: 50},
-        {duration: '20s', target: 10},
-        {duration: '10s', target: 10}
+        {duration: '10s', target: 20},
+        {duration: '5s', target: 80},
+        {duration: '20s', target: 20},
+        {duration: '10s', target: 15}
     ],
     thresholds: {
         http_req_duration: ['p(99) < 1000']

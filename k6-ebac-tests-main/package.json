@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "pretest": "webpack",
-    "test": "k6 run dist/user.test.js",
-    "pretest:custormers": "webpack",
-    "test:customers": "k6 run dist/customers.test.js",
+    "customers": "k6 run dist/customers.test.js",
+    "pretest:user": "webpack",
+    "user": "k6 run dist/user.test.js",
     "pretest:products": "webpack",
-    "test:products": "k6 run dist/products.test.js"
+    "products": "k6 run dist/products.test.js"
    
   },
   "author": "gabrielroquim",

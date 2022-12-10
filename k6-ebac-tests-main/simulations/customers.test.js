@@ -6,8 +6,8 @@ import Customer from '../request/customers.request.js'
 export const options = {
     stages: [
         {duration: '10s', target: 10},
-        {duration: '5s', target: 50},
-        {duration: '20s', target: 10},
+        {duration: '5s', target: 60},
+        {duration: '20s', target: 20},
         {duration: '10s', target: 10}
     ],
     thresholds: {
