@@ -1,0 +1,19 @@
+{
+  "name": "md_28",
+  "version": "1.0.0",
+  "description": "Testes de perfomance usando k6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielroquim/MD_28.git"
+  },
+  "author": "Gabriel Roquim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielroquim/MD_28/issues"
+  },
+  "homepage": "https://github.com/gabrielroquim/MD_28#readme"
+}
